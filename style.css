@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(Site_Background-İmage.jpg);
+
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    height: 10vh;
+    width: 100%;
+    background: rgba(116, 71, 64, 0.589);
+}
+
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px; 
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: bisque;
+    user-select: none;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin:0 8px;
+    line-height: 80px;  /* yukarıdan aşağı 80 px'lik bir boşluk*/
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+}
+
+.navbar ul li a.active , .navbar ul li a:hover{
+    background: blueviolet;
+    border-radius:15px;
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    /*transform translate de dahil ilk dört satır ortalama için kullanılabilir*/
+    font-family: sans-serif;
+    user-select: none;  /*user-select: none  --> metnin seçilememesini sağlar*/
+}
+
+.center h1{
+    margin-bottom: 25px;
+    color: beige;
+    stroke-width: 10px;
+    text-shadow:-5px -1px black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;  /*text-align: center  --> METNİ ortalar.*/
+}
+
+.center h2{
+    color: beige;
+    font-size: 50px;
+    text-shadow:-4px -2px black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: lighter;
+    width: 885px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.center .buttons{
+    /*Butonlar ortalandı, aşağıdaki 5 satır ile*/
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /*margin: 35px 280px; silindi sebebi --> butonları ortalamak için display ve gap kullanıldı.*/ 
+    
+}
+
+
+.center .buttons button{
+    margin-top: 80px;
+    align-items: center;
+    height: 60px;
+    width: 30%;
+    font-size: 20px;
+    color: bisque;
+    background: sienna;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;  /*cursor: pointer  --> buton üzerine gelince fare imleci şekil alır.*/
+    outline: none;  /*outline: none --> Butona tıklayınca çerçeve görünmez*/   
+}
+
+.center .buttons button:hover{
+    background: rgb(214, 111, 63);
+    transition: .4s;
+}
+
+/*başta footer olarak oluşturulan kısıma sonradan article ismi verildi*/
+
+div.article{
+    background-image: url(Center.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;   
+    margin-top: 90vh;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; /* *** flex genelde divlere verilir *** */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* eşit aralıklarla köşelere dağıtıyor.*/
+
+}
+
+
+
+
+div.information_box{
+    border: 2px solid rgb(34, 32, 32);
+    height: 450px;
+    width: 23%;
+    background-color:bisque;
+    border-radius: 3%;
+}
+
+div.information_box h1{
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.information_box ul{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 6px;
+}
+
+.information_box ul li{
+    
+    list-style: none;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+#spec_ul li{
+    margin-left: 10px;
+    list-style-type: decimal;    
+}
+
+
+
